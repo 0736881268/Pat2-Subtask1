@@ -49,7 +49,8 @@ int main() {
     for (int i = 0; i < userMessage.length(); i++) {
 
         char ch = userMessage[i];   // look at one character at a time
-    /*
+
+        /*
             Handle spaces:
             A space means a new word.
             We add extra spacing in the full result to show the gap.
@@ -80,7 +81,20 @@ int main() {
 
         string morse = morseTable[index];   // look up the Morse code
 
-     
+        // PRINT LETTER AND ITS CODE
+        cout << ch << ": " << morse << endl;
+
+        // Add to the full message with 3 spaces separating each letter
+        fullResult += morse + "   ";
+    }
+
+    // PRINT FULL MORSE MESSAGE
+    cout << endl;
+    cout << "Full Morse code message:" << endl;
+    cout << fullResult << endl;
+
+    return 0;
+}
  
  
  
