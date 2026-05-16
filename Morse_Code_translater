@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+#include <cctype>   // needed for toupper() and isalpha()
+
+using namespace std;
+
+// MORSE CODE TABLE 
+// Each position matches a letter: position 0 = A, position 25 = Z
+string morseTable[26] = {
+    ".-",    // A
+    "-...",  // B
+    "-.-.",  // C
+    "-..",   // D
+    ".",     // E
+    "..-.",  // F
+    "--.",   // G
+    "....",  // H
+    "..",    // I
+    ".---",  // J
+    "-.-",   // K
+    ".-..",  // L
+    "--",    // M
+    "-.",    // N
+    "---",   // O
+    ".--.",  // P
+    "--.-",  // Q
+    ".-.",   // R
+    "...",   // S
+    "-",     // T
+    "..-",   // U
+    "...-",  // V
+    ".--",   // W
+    "-..-",  // X
+    "-.--",  // Y
+    "--.."   // Z
+};
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
