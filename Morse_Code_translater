@@ -35,13 +35,17 @@ string morseTable[26] = {
     "--.."   // Z
 };
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+int main() {
+
+    string userMessage;   // stores the message the user types
+    string fullResult;    // builds up the full Morse code line at the end
+
+    // GET INPUT 
+    cout << "Enter a message to translate: ";
+    getline(cin, userMessage);   // reads the whole line, spaces included
+    cout << endl;
+
+    // TRANSLATE EACH CHARACTER 
+    for (int i = 0; i < userMessage.length(); i++) {
+
+        char ch = userMessage[i];   // look at one character at a time
