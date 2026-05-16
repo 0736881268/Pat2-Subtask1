@@ -49,3 +49,46 @@ int main() {
     for (int i = 0; i < userMessage.length(); i++) {
 
         char ch = userMessage[i];   // look at one character at a time
+    /*
+            Handle spaces:
+            A space means a new word.
+            We add extra spacing in the full result to show the gap.
+        */
+        if (ch == ' ') {
+            fullResult += "   ";   // 3 spaces between words
+            continue;
+        }
+
+        /*
+            Skip anything that is not a letter.
+            Numbers, punctuation, symbols are all ignored.
+        */
+        if (!isalpha(ch)) {
+            continue;
+        }
+
+        // CONVERT TO UPPERCASE
+        // The table only works for uppercase letters
+        ch = toupper(ch);
+
+        /*
+            Find the array index for this letter.
+            'A' has ASCII value 65.
+            Subtracting 'A' from the letter gives us 0 for A, 1 for B, etc.
+        */
+        int index = ch - 'A';
+
+        string morse = morseTable[index];   // look up the Morse code
+
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
